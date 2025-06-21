@@ -1,0 +1,99 @@
+body {
+    background: #faf8ef;
+    font-family: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #776e65;
+    margin-top: 40px;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+#highscore {
+    background: #bbada0;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+#game-container {
+    background: #bbada0;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: repeat(4, 80px);
+    gap: 10px;
+}
+
+.tile {
+    width: 80px;
+    height: 80px;
+    background: #cdc1b4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: #776e65;
+    border-radius: 3px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.tile-2    { background: #eee4da; color: #776e65; }
+.tile-4    { background: #ede0c8; color: #776e65; }
+.tile-8    { background: #f2b179; color: #f9f6f2; }
+.tile-16   { background: #f59563; color: #f9f6f2; }
+.tile-32   { background: #f67c5f; color: #f9f6f2; }
+.tile-64   { background: #f65e3b; color: #f9f6f2; }
+.tile-128  { background: #edcf72; color: #f9f6f2; }
+.tile-256  { background: #edcc61; color: #f9f6f2; }
+.tile-512  { background: #edc850; color: #f9f6f2; }
+.tile-1024 { background: #edc53f; color: #f9f6f2; }
+.tile-2048 { background: #edc22e; color: #f9f6f2; }
+
+#restart-btn {
+    background: #8f7a66;
+    color: #fff;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    transition: background 0.2s;
+}
+#restart-btn:hover {
+    background: #a39489;
+}
+
+#game-over {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(238, 228, 218, 0.95);
+    padding: 40px 60px;
+    border-radius: 10px;
+    font-size: 32px;
+    color: #776e65;
+    z-index: 10;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
