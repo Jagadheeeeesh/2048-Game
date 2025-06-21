@@ -2,6 +2,7 @@
 
 A simple and clean implementation of the classic 2048 puzzle game, built with HTML, CSS, and vanilla JavaScript.
 
+## Live Demo: https://jagadheeeeesh.github.io/2048-Game/
 ## Features
 
 - **Classic 2048 Gameplay:** Slide tiles and merge them to reach the 2048 tile.
